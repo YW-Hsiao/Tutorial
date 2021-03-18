@@ -32,51 +32,56 @@ git config --list
     cd ./"folder"  
     cd <where>/"folder"
     ```
-    > `cd ..`: Go back to previous layer.
-    > `cd ~`: Go to home directory.
+    > `cd ..`: Go back to previous layer.  
+    > `cd ~`: Go to home directory.  
     > `cd /`: Go to root directory.
+2. Operation
+    ```
+    mkdir "folder"
+    touch "file"
+    ```
+    `rm`: Remove or Delete
+    
+    `cp`: Copy/Paste
+    ```
+    cp "file1" "file2"
+    cp -r "folder1" "folder2"
+    rsync -avh "file1" "file2"
+    ```
+    `mv`: Move file of change file name.
+    ```
+    mv "file" "folder"
+    ```
+3. Word editor
+`vim`: Creat a txt file.
+    > `i`: Enter mode  
+    > `esc`: Ordinary mode  
+    > `:q`: Exit.  
+    > `:wq`: Save and exit
+4. Others
+`clear`: Clear terminal layouts.  
+`grep`: Catch and highlight key words.  
+`wget`: Download  
+`curl`: Send out request.  
+`>`:  
+`|`:  
+`echo`:
 
-Here
+
+
+
+
+
+Start Here
 
    
-2. B  
+4. B  
 abc  
 abc
 ```
 abc
 ```
     abc
-
-
-3. C
-```
-mkdir "folder"
-touch "file"
-```
-4. D
-```
-cp "file1" "file2"
-cp -r "folder1" "folder2"
-rsync -avh "file1" "file2"
-```
-5. E
-`vim "file"`: Creat a txt file.
-`i`: Enter mode.
-`esc`: Ordinary mode.
-`:q`: Exit.
-`:wq`: Save and exit.
-6. F
-7. `clear`: Clear terminal layouts.
-```
-grep
-wget
-curl
->
-|
-echo
-```
-
-
 
 
 
