@@ -86,7 +86,8 @@ git config --list
     `curl`: Send out request.  
     `>`: Redirection, redirect input output
     `|`:  
-    `echo`:
+    `echo`:  
+    `cat`
     
 
 
@@ -96,8 +97,11 @@ git config --list
 1. Basic  
     `docker ps`: Look over the operating container.  
     > `docker ps -a`: More detail
-     
+    
     `docker images`: Look over the images.
+    `htop`: Look over CPU.
+    `free -h`: Look over RAM.
+    
 
 
 
