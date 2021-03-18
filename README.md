@@ -46,6 +46,7 @@ git config --list
     ```
     > If file is absence, then it will add a file.  
     > If file is existing, then file time will be changed to current time.
+    > `touch main.py abc.py xyz.txt`: Create 3 files.
     
     `rm`: Remove or Delete file.
     > `rm -r "folder"`: Remove folder and all files inside.  
