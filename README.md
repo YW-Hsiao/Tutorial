@@ -41,10 +41,10 @@ cd <where>/"folder"
 2. B  
 abc  
 abc
-```
-cd
-```
- abc
+    ```
+    abc
+    ```
+abc
 
 
 3. C
