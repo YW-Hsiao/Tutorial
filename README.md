@@ -95,7 +95,8 @@ git config --list
 ## 3. Docker Commands
 1. Basic  
     `docker ps`: Look over the operating container.  
-        > `docker ps -a`: More detail  
+    > `docker ps -a`: More detail
+     
     `docker images`: Look over the images.
 
 
