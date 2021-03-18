@@ -24,20 +24,20 @@ git config --list
     > `ls -a`
     > `ls -l`
     > `ls -al`
-
-    `cd`: Switch path.  
-    > `cd..`: Go back to previous layer.
-
-    abc
+    `cd`: Switch path.
+    > `cd ..`: Go back to previous layer.
     ```
     cd "folder"
     cd ./"folder"
     cd <where>/"folder"
     ```
-    > `cd ..`: Go back to previous layer.  
-    > `cd ~`: Go to home directory.  
-    > `cd /`: Go to root directory.  
+    > `cd ..`: Go back to previous layer.
+    > `cd ~`: Go to home directory.
+    > `cd /`: Go to root directory.
 
+Here
+
+   
 2. B  
 abc  
 abc
