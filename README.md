@@ -65,27 +65,39 @@ git config --list
     ```
 3. Word editor  
 `vim`: Creat a txt file.
-    > `i`: Enter mode  
+    ```
+    vim "file"
+    ```
+    > `i`: Insert mode  
     > `esc`: Ordinary mode  
-    > `:q`: Exit.  
+    > `:q`: Exit  
     > `:wq`: Save and exit
-4. Others  
-`clear`: Clear terminal layouts.  
-`grep`: Catch and highlight key words.  
-`wget`: Download  
-`curl`: Send out request.  
-`>`:  
-`|`:  
-`echo`:
-
-
+    > `q!`: Not save and exit
+4. Compression  
+`gzip`: Compress file.
+6. Others  
+    `clear`: Clear terminal layouts.  
+    `grep`: Catch and highlight key words.  
+    ```
+    grep "keyword" "file"
+    ```
+    `sed`:  
+    `wget`: Download  
+    `curl`: Send out request.  
+    `>`: Redirection, redirect input output
+    `|`:  
+    `echo`:
+    
 
 
 
 
 ## 3. Docker Commands
 1. Basic
-`docker ps`: Look over operating container.
+    `docker ps`: Look over the operating container.
+    > `docker ps -a`: More detail
+    `docker images`: Look over the images.
+
 
 
 
