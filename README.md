@@ -47,4 +47,24 @@ cp "file1" "file2"
 cp -r "folder1" "folder2"
 rsync -avh "file1" "file2"
 ```
+5. E
+`vim "file"`: Creat a txt file.
+`i`: Enter mode.
+`esc`: Ordinary mode.
+`:q`: Exit.
+`:wq`: Save and exit.
+6. F
+```
+grep
+wget
+curl
+>
+|
+echo
+```
+
+
+
+
+
 
