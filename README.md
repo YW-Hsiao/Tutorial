@@ -20,6 +20,7 @@ git config --list
 "folder"=the name of folder
 "file"=the name of file
 1. A
+`pwd`: Print working folder = path of current location.
 ```
 cd "folder"
 cd ./"folder"
