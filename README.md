@@ -23,7 +23,7 @@ git config --list
 `ls`: Print all files of current location.
     > `ls -a`  
     > `ls -l`  
-    > `ls -al`  
+    > `ls -al`
     
     `cd`: Switch path.  
     > `cd ..`: Go back to previous layer.
