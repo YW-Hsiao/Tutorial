@@ -51,6 +51,7 @@ git config --list
     > `rm -r "folder"`: Remove folder and all files inside.  
     > `rm -f`:  
     > `rm -rf`:  
+    
     `cp`: Copy/Paste
     ```
     cp "file1" "file2"
