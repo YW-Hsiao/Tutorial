@@ -39,7 +39,12 @@ cd <where>/"folder"
     > `cd /`: Go to root directory.  
 
 2. B  
-
+abc  
+abc
+```
+cd
+```
+abc
 
 
 3. C
