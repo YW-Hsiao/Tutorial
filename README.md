@@ -17,22 +17,21 @@ git config --list
 
 
 ## Linux Commands
-"folder"=the name of folder
-"file"=the name of file
-1. A
+"folder"=the name of folder; "file"=the name of file
+1. A  
 `pwd`: Print working folder = path of current location.
 ```
 cd "folder"
 cd ./"folder"
 cd <where>/"folder"
-cd ..
-cd ~
-cd /
-pwd
 ```
+`cd ..`: Go back to previous layer.  
+`cd ~`: Go to home directory.  
+`cd /`: Go to root directory.
+`clear`: Clear terminal layouts.
 2. B
+`ls`: Print all files of current location.
 ```
-ls
 ls -a
 ls -l
 ls -al
