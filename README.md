@@ -16,7 +16,7 @@ git config --list
 
 
 
-## 2. Linux Commands
+## 2. Linux (macOS) Commands
 "folder"=the name of folder; "file"=the name of file
 1. Path  
 `pwd`: Print working folder = path of current location.  
@@ -35,7 +35,7 @@ git config --list
     > `cd ..`: Go back to previous layer.  
     > `cd ~`: Go to home directory.  
     > `cd /`: Go to root directory.
-2. Operation
+2. Operation  
 `mkdir`: Make Directory.
     ```
     mkdir "folder"
@@ -61,14 +61,15 @@ git config --list
     `mv`: Move file of change file name.
     ```
     mv "file" "folder"
+    mv "file" "new_name file"
     ```
-3. Word editor
+3. Word editor  
 `vim`: Creat a txt file.
     > `i`: Enter mode  
     > `esc`: Ordinary mode  
     > `:q`: Exit.  
     > `:wq`: Save and exit
-4. Others
+4. Others  
 `clear`: Clear terminal layouts.  
 `grep`: Catch and highlight key words.  
 `wget`: Download  
@@ -76,6 +77,15 @@ git config --list
 `>`:  
 `|`:  
 `echo`:
+
+
+
+
+
+
+## 3. Docker Commands
+1. Basic
+`docker ps`: Look over operating container.
 
 
 
