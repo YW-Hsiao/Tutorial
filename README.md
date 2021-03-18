@@ -44,8 +44,9 @@ git config --list
     ```
     touch "file"
     ```
-    > If file is absence, then it will add a file.
+    > If file is absence, then it will add a file.  
     > If file is existing, then file time will be changed to current time.
+    
     `rm`: Remove or Delete file.
     > `rm -r "folder"`: Remove folder and all files inside.  
     > `rm -f`:  
