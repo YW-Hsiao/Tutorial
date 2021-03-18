@@ -36,12 +36,20 @@ git config --list
     > `cd ~`: Go to home directory.  
     > `cd /`: Go to root directory.
 2. Operation
+`mkdir`: Make Directory.
     ```
     mkdir "folder"
+    ```
+    `touch`: Create file or modify file time.
+    ```
     touch "file"
     ```
-    `rm`: Remove or Delete
-    
+    > If file is absence, then it will add a file.
+    > If file is existing, then file time will be changed to current time.
+    `rm`: Remove or Delete file.
+    > `rm -r "folder"`: Remove folder and all files inside.  
+    > `rm -f`:  
+    > `rm -rf`:  
     `cp`: Copy/Paste
     ```
     cp "file1" "file2"
