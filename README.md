@@ -24,6 +24,7 @@ git config --list
     > `ls -a`  
     > `ls -l`  
     > `ls -al`  
+    
     `cd`: Switch path.  
     > `cd ..`: Go back to previous layer.
     ```
