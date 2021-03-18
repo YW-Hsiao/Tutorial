@@ -21,14 +21,14 @@ git config --list
 1. Path  
 `pwd`: Print working folder = path of current location.  
 `ls`: Print all files of current location.
-    > `ls -a`
-    > `ls -l`
-    > `ls -al`
-    `cd`: Switch path.
+    > `ls -a`  
+    > `ls -l`  
+    > `ls -al`  
+    `cd`: Switch path.  
     > `cd ..`: Go back to previous layer.
     ```
-    cd "folder"
-    cd ./"folder"
+    cd "folder"  
+    cd ./"folder"  
     cd <where>/"folder"
     ```
     > `cd ..`: Go back to previous layer.
