@@ -28,12 +28,12 @@ git config --list
     `cd`: Switch path.  
     > `cd..`: Go back to previous layer.
 
-abc
-```
-cd "folder"
-cd ./"folder"
-cd <where>/"folder"
-```
+    abc
+    ```
+    cd "folder"
+    cd ./"folder"
+    cd <where>/"folder"
+    ```
     > `cd ..`: Go back to previous layer.  
     > `cd ~`: Go to home directory.  
     > `cd /`: Go to root directory.  
@@ -41,9 +41,9 @@ cd <where>/"folder"
 2. B  
 abc  
 abc
-    ```
-    abc
-    ```
+```
+abc
+```
     abc
 
 
