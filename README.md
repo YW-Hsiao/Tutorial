@@ -101,6 +101,13 @@ git config --list
     `docker images`: Look over the images.
     `htop`: Look over CPU.
     `free -h`: Look over RAM.
+2. JupyterLab  
+    In your container
+    ```
+    ssh -N -f -L localhost:<port number>:localhost:<port number> <username>@server-ip
+    e.g.
+    ssh -N -f -L localhost:6699:localhost:6699 youwei@140.114.94.174
+    ```
     
 
 
