@@ -17,7 +17,7 @@ git config --list
 
 
 ## 2. Linux (macOS) Commands
-"folder"=the name of folder; "file"=the name of file
+`"folder"=the name of folder; "file"=the name of file`
 1. Path  
 `pwd`: Print working folder = path of current location.  
 `ls`: Print all files of current location.
@@ -45,7 +45,7 @@ git config --list
     touch "file"
     ```
     > If file is absence, then it will add a file.  
-    > If file is existing, then file time will be changed to current time.
+    > If file is existing, then file time will be changed to current time.  
     > `touch main.py abc.py xyz.txt`: Create 3 files.
     
     `rm`: Remove or Delete file.
@@ -64,6 +64,24 @@ git config --list
     mv "file" "folder"
     mv "file" "new_name file"
     ```
+    `rsync`: Copy/Paste
+    ```
+    rsync -parameters "source file" "destination file"
+    ```
+    > `-a`: = -rlptgoD, leave detail.
+    > `-v`: Verbose mode, output more detail information.
+    > `-h`: Output number as easily reading format.
+    > `-z`: Start compression.
+    > `-r`: Recursive backup all directories and files under sub-directory.
+    Simply copy/paste local file or folder.
+    ```
+    rsync -avh <where>/"file" <where>/"folder"
+    rsync -avh <where>/"folder" <where>/"folder"/
+    ```
+    Remote
+    ```
+    rsync -avzh <where>/"file" <pi>@192.168.1.12:<where>/mybackup/
+    ```
 3. Word editor  
 `vim`: Creat a txt file.
     ```
@@ -72,7 +90,7 @@ git config --list
     > `i`: Insert mode  
     > `esc`: Ordinary mode  
     > `:q`: Exit  
-    > `:wq`: Save and exit
+    > `:wq`: Save and exit  
     > `q!`: Not save and exit
 4. Compression  
 `gzip`: Compress file.
@@ -115,18 +133,66 @@ git config --list
 
 
 
-
-
-Start Here
-
-   
-4. B  
+## Test Markdown Commands
+### Typesetting
+1. First way  
 abc  
-abc
+123
 ```
 abc
 ```
-    abc
+    123
+    ```
+    xyz
+    ```
+2. Second way  
+abc
+123
+    ```
+    xyz
+    ```
+    ijk
+
+### Color
+1. First way
+```diff
+- text in red
++ text in green
+! text in orange
+# text in gray
+```
+```diff
+- abc
++ 123
+! xyz
+@@ text in purple and bold @@
+```
+```diff
+abc
+```
+`- abc`  
+`+ 123`  
+`! xyz`  
+2. Second way  
+![#FF0000](https://placehold.it/15/FF0000/000000?text=+)`abc`  
+![#FF0000](https://placehold.it/15/FF0000/000000?text=+)`abc`
+
+3. Third way
+```js
+abc
+123
+xyz
+```
+```ruby
+abc
+123
+xyz {ijk}
+```
+<span style="color: green"> Some green text </span>
+
+
+
+4. B  
 
 
 
