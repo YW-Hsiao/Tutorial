@@ -68,11 +68,12 @@ git config --list
     ```
     rsync -parameters "source file" "destination file"
     ```
-    > `-a`: = -rlptgoD, leave detail.
-    > `-v`: Verbose mode, output more detail information.
-    > `-h`: Output number as easily reading format.
-    > `-z`: Start compression.
-    > `-r`: Recursive backup all directories and files under sub-directory.
+    > `-a`: = -rlptgoD, leave detail.  
+    > `-v`: Verbose mode, output more detail information.  
+    > `-h`: Output number as easily reading format.  
+    > `-z`: Start compression.  
+    > `-r`: Recursive backup all directories and files under sub-directory.  
+    
     Simply copy/paste local file or folder.
     ```
     rsync -avh <where>/"file" <where>/"folder"
@@ -133,8 +134,8 @@ git config --list
 
 
 
-## Test Markdown Commands
-### Typesetting
+## 4. Test Markdown Commands
+### 4-1. Typesetting
 1. First way  
 abc  
 123
@@ -152,8 +153,15 @@ abc
     xyz
     ```
     ijk
+### 4-2. Hyperlink
+[![Build Status](http://img.shields.io/travis/clips/pattern/master.svg?style=flat)](https://travis-ci.org/clips/pattern/branches)
+[![Coverage](https://img.shields.io/coveralls/clips/pattern/master.svg?style=flat)](https://coveralls.io/github/clips/pattern?branch=master)
+[![PyPi version](http://img.shields.io/pypi/v/pattern.svg?style=flat)](https://pypi.python.org/pypi/pattern)
+[![License](https://img.shields.io/badge/License-BSD%203--Clause-green.svg?style=flat)](https://github.com/clips/pattern/blob/master/LICENSE.txt)
 
-### Color
+
+
+### 4-3. Color
 1. First way
 ```diff
 - text in red
@@ -188,12 +196,59 @@ abc
 123
 xyz {ijk}
 ```
-<span style="color: green"> Some green text </span>
+<span style="color: green"> Some green text </span>  
+4. Fourth way
+```
+<div class="text-purple">
+    This text is purple, <a href="#" class="text-inherit">including the link</a>
+</div>
+```
+
+<div class="text-purple">
+    This text is purple, <a href="#" class="text-inherit">including the link</a>
+</div>  
+<div class="text-purple">
+  This text is purple, <a href="#" class="text-inherit">including the link</a>
+</div>  
 
 
 
-4. B  
 
 
 
+<div class="text-blue mb-2">
+  .text-blue on white
+</div>  
+`<div class="text-blue mb-2">
+  .text-blue on white
+</div>`
+```
+<div class="text-blue mb-2">
+  .text-blue on white
+</div>
+```
 
+
+### 4-4. Pattern
+[![Unicode](https://home.unicode.org/wp-content/uploads/2019/12/Unicode-Logo-Final-Blue-95x112.jpg)](https://unicode-table.com/en/)  
+[Unicode Character Table](https://unicode-table.com/en/)  
+&#x1F34E;
+&#x1F34F;
+&#x1F499;
+&#x1F49A;
+&#x1F49B;
+&#x1F49C;
+&#x1F4D7;
+&#x1F4D8;
+&#x1F4D9;
+&#x1F534;
+&#x1F535;
+&#x1F536;
+&#x1F537;
+&#x1F538;
+&#x1F539;
+&#x1F53A;
+&#x1F53B;
+&#x1F53C;
+&#x1F53D;  
+I use &#x1F53A; as NOTICE.
