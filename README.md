@@ -230,8 +230,18 @@ xyz {ijk}
 
 
 ### 4-4. Pattern
-[![Unicode](https://home.unicode.org/wp-content/uploads/2019/12/Unicode-Logo-Final-Blue-95x112.jpg)](https://unicode-table.com/en/)  
+[![Unicode](https://home.unicode.org/wp-content/uploads/2019/12/Unicode-Logo-Final-Blue-95x112.jpg)](https://home.unicode.org/)  
 [Unicode Character Table](https://unicode-table.com/en/)  
+The Unicode number:  
+U+1F53A  
+\1F53A  
+&#128314;
+&#128315;
+&#10071;
+&#8252;  
+I use &#10071;&#128314; sentence &#128315; as NOTICE.
+
+
 &#x1F34E;
 &#x1F34F;
 &#x1F499;
@@ -251,4 +261,4 @@ xyz {ijk}
 &#x1F53B;
 &#x1F53C;
 &#x1F53D;  
-I use &#x1F53A; as NOTICE.
+
