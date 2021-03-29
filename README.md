@@ -2,7 +2,7 @@
 Tutorial is important record about basic commands!!
 
 ## 1. GitHub
-1. If your repository is already existed in GitHub, you must first clone into your local site.
+1. If your repository has already existed in GitHub, you must first clone into your local site.
     ```ruby
     git clone <url>
     e.g. https://github.com/YW-Hsiao/Test
@@ -26,11 +26,51 @@ Tutorial is important record about basic commands!!
     git init
     ```
     You are going to get the feedback to demonstrate you have successfully established a local repository.
-    ```
+    ```ruby
     $ git init
     Initialized empty Git repository in <path of project>/.git/
     ```
-    This command means construct a `.git` directory in your "folder". `.git` record any version control. We can use `ls -al` to check.
+    If `.git` has already existed,
+    ```
+    Reinitialized existing Git repository in <path of project>/.git/
+    e.g.
+    Reinitialized existing Git repository in /Storage/youwei/GitHub/SVJ-ATLAS/.git/
+    ```
+    This command means construct a `.git` directory in your "folder". `.git` record any version control. We can use `ls -al` to check. We may exploit useful command `git status` to look over what our next step is. We found that Untracke files.
+    ```
+    On branch main
+    Your branch is up to date with 'origin/main'.
+    
+    Untracked files:
+      (use "git add <file>..." to include in what will be committed)
+      
+      	"files" or "folders"
+        e.g.
+        t-channel_ckkwl-v1/
+       
+    nothing added to commit but untracked files present (use "git add" to track)
+    ```
+    Git has detected that you have added these files, but it is not yet tracked by Git. Therefore, we must add to the staging area (index), and then "files" or "folders" can be added to the tracking object.
+    ```ruby
+    git add "file"; git add "folder"
+    git add .
+    e.g.
+    git add README.md
+    ```
+    
+    
+    
+    ```
+    git remote add origin https://github.com/YW-Hsiao/SVJ.git
+    git add .
+    git add README
+    
+    git commit -m "first commit v.1.0"
+    
+    git push -u origin main
+    ```
+    
+    
     
     
     
