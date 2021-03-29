@@ -2,17 +2,39 @@
 Tutorial is important record about basic commands!!
 
 ## 1. GitHub
-1. First,
-```
-git config --global user.name "your name"
-git config --global user.email "your email"
-git config --list
-```
-
-
-
-
-
+1. If your repository is already existed in GitHub, you must first clone into your local site.
+    ```ruby
+    git clone <url>
+    e.g. https://github.com/YW-Hsiao/Test
+    git clone https://github.com/YW-Hsiao/Test.git
+    ```
+    After download, we can use `git remote` to look over remote database list, we will find that Git will also bind the origin remote database by default. So you do NOT need to execute `git remote add` to join the remote database.  
+    If you have no repository in GitHub, we must setup individual informations
+    ```ruby
+    git config --global user.name "your name"
+    git config --global user.email "your email"
+    ```
+    This will record which developer made the version. You may use following command to check.
+    ```ruby
+    git config --list
+    q
+    ```
+    Now, we will construct the local database (Repository). First, you need make a directory, and then go into this folder to execute
+    ```ruby
+    mkdir "folder"
+    cd "folder"
+    git init
+    ```
+    You are going to get the feedback to demonstrate you have successfully established a local repository.
+    ```
+    $ git init
+    Initialized empty Git repository in <path of project>/.git/
+    ```
+    This command means construct a `.git` directory in your "folder". `.git` record any version control. We can use `ls -al` to check.
+    
+    
+    
+    
 
 
 
