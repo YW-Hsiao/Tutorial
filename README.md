@@ -114,33 +114,48 @@ Tutorial is important record about basic commands!!
         first commit v.1.0
     ```
 2. We will discuss how to push repository into GitHub.
-    ```
+    ```ruby
     git remote add <remote repository abbreviation> <url>
     e.g.
     git remote add origin https://github.com/YW-Hsiao/SVJ.git
+    git remote add origin https://github.com/YW-Hsiao/Test_v2.git
     ```
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    The feedback is
     ```
-    git remote add origin https://github.com/YW-Hsiao/SVJ.git
-    git add .
-    git add README
-    
-    git commit -m "first commit v.1.0"
-    
+    fatal: remote origin already exists.
+    ```
+    Use `git status` to check
+    ```
     git push -u origin main
     ```
+    The feedback is
+    ```
+    Username for 'https://github.com': <ID>
+    Password for 'https://YW-Hsiao@github.com': <password>
+    Counting objects: 49, done.
+    Delta compression using up to 80 threads.
+    Compressing objects: 100% (49/49), done.
+    Writing objects: 100% (49/49), 762.08 KiB | 5.44 MiB/s, done.
+    Total 49 (delta 25), reused 0 (delta 0)
+    remote: Resolving deltas: 100% (25/25), done.
+    To https://github.com/YW-Hsiao/SVJ-ATLAS.git
+       cf4c188..5a53b44  main -> main
+    Branch 'main' set up to track remote branch 'main' from 'origin'.
+    ```
     
-    Write a faster workflow.
+
+
+### 1-2. The faster workflow
+
+
+
+### 1-3. Useful commands
+```
+git status
+git log
+git remote
+git remote -v
+```
     
     
     
