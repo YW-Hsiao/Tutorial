@@ -44,19 +44,89 @@ Tutorial is important record about basic commands!!
     Untracked files:
       (use "git add <file>..." to include in what will be committed)
       
-      	"files" or "folders"
+        "file" or "folder"
         e.g.
         t-channel_ckkwl-v1/
        
     nothing added to commit but untracked files present (use "git add" to track)
     ```
-    Git has detected that you have added these files, but it is not yet tracked by Git. Therefore, we must add to the staging area (index), and then "files" or "folders" can be added to the tracking object.
+    Git has detected that you have added these files, but it is not yet tracked by Git. Therefore, we must add to the staging area (index), and then "file" or "folder" can be added to the tracking object.
     ```ruby
     git add "file"; git add "folder"
     git add .
     e.g.
     git add README.md
     ```
+    Use `git status` to see feedback.
+    ```
+    On branch main
+    Your branch is up to date with 'origin/main'.
+    
+    Changes to be committed:
+      (use "git reset HEAD <file>..." to unstage)
+      
+    	new file:   <where>/"file"
+        e.g.
+        new file:   t-channel_ckkwl-v1/.ipynb_checkpoints/changePID-checkpoint.log
+    ```
+    `Changes to be committed` means the files placed in the index will be submitted to a new version (commit). We can exploit following command to commit a new version.
+    ```ruby
+    git commit -m "remark"
+    e.g.
+    git commit -m "first commit"
+    git commit -m "first commit v.1.0"
+    ```
+    The feedback is
+    ```
+    [main <number>] "remark"
+     <number of object> files changed, <number> insertions(+)
+     create mode <number> <where>/"file"
+    e.g.
+    [main 5a53b44] first commit v.1.0
+     47 files changed, 38695 insertions(+)
+     create mode 100644 t-channel_ckkwl-v1/.ipynb_checkpoints/changePID-checkpoint.log
+    ```
+    Congratulation, we construct first version via Git. If we use `git status`, we obtain
+    ```
+    On branch main
+    Your branch is ahead of 'origin/main' by 1 commit.
+      (use "git push" to publish your local commits)
+      
+    nothing to commit, working tree clean
+    ```
+    Because we had just submitted "file" as a version (commit), the current working directory has been emptied. If we would like to investigate added version,
+    ```ruby
+    git log
+    q
+    ```
+    The feedback is
+    ```
+    commit <number> (HEAD -> main)
+    Author: "your name" <"your email">
+    Date:   "your update time" +0800
+    
+        "remark"
+    e.g.
+    commit 5a53b449adea3bf71cced7d67cea833e6b84da8b (HEAD -> main)
+    Author: YW-Hsiao <hsiao.phys@gapp.nthu.edu.tw>
+    Date:   Mon Mar 29 16:08:15 2021 +0800
+    
+        first commit v.1.0
+    ```
+2. We will discuss how to push repository into GitHub.
+    ```
+    git remote add <remote repository abbreviation> <url>
+    e.g.
+    git remote add origin https://github.com/YW-Hsiao/SVJ.git
+    ```
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
@@ -70,7 +140,7 @@ Tutorial is important record about basic commands!!
     git push -u origin main
     ```
     
-    
+    Write a faster workflow.
     
     
     
