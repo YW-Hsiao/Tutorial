@@ -162,7 +162,7 @@ git remote -v
 ### 1-4. pull
 1. Download sync update
     ```ruby
-    cd "<where>/folder"
+    cd <where>/"folder"
     git pull
     git pull origin main
     
