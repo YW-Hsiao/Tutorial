@@ -125,7 +125,7 @@ Tutorial is important record about basic commands!!
     fatal: remote origin already exists.
     ```
     Use `git status` to check
-    ```
+    ```ruby
     git push -u origin main
     ```
     The feedback is
@@ -161,7 +161,7 @@ git remote -v
 
 ### 1-4. pull
 1. Download sync update
-    ```
+    ```ruby
     cd "<where>/folder"
     git pull
     
