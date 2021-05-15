@@ -157,8 +157,34 @@ git remote
 git remote -v
 ```
     
+
+
+### 1-4. pull
+1. Download sync update
+    ```
+    cd "<where>/folder"
+    git pull
     
-    
+    input "your name"
+    input " your password"
+    ```
+    The feedback is
+    ```
+    remote: Enumerating objects: 4, done.
+    remote: Counting objects: 100% (4/4), done.
+    remote: Compressing objects: 100% (2/2), done.
+    remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+    Unpacking objects: 100% (3/3), done.
+    From https://github.com/YW-Hsiao/Test
+       9a1e67a..2767a68  main       -> YW/main
+    Updating 9a1e67a..2767a68
+    Fast-forward
+     README.md | 3 +++
+     1 file changed, 3 insertions(+)
+     create mode 100644 README.md
+    ```
+
+
     
 
 
