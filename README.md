@@ -164,6 +164,7 @@ git remote -v
     ```ruby
     cd "<where>/folder"
     git pull
+    git pull origin main
     
     input "your name"
     input " your password"
