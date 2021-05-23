@@ -282,6 +282,9 @@ git remote -v
     `|`:  
     `echo`:  
     `cat`
+    `df -h`: Look over the size of systematic storage
+    `du -hs <where>/"folder"`: Show the size of folder
+    `du -chd 1 | sort -h`: List all size of folders in current path and sort them
     
 
 
