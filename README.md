@@ -186,6 +186,28 @@ git remote -v
     ```
 
 
+### 1-5. 
+1. If there is a existence of repository, and you want to add a new folder to it
+    ```ruby
+    mkdir "new folder"
+    git config --global user.name "your name"
+    git config --global user.email "your email"
+    git config --list
+    git init
+    ls -al
+    git add .
+    git commit -m "first commit"
+    git remote add origin https://github.com/YW-Hsiao/Test.git
+    git push -u origin main
+    ```
+    The feedback is
+    ```
+    error: src refspec main does not match any.
+    error: failed to push some refs to 'https://github.com/YW-Hsiao/Test.git'
+    ```
+
+
+
     
 
 
