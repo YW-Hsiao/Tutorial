@@ -193,11 +193,12 @@ git remote -v
 2. Before add `.gitignore`, there are existences of file or folder, we cannot ignore them. In other hand, `.gitignore` only ignore untracked files, so we need to clear the local Git cache, which is equivalent to remove all files, but no files are deleted.
 3. And then re-join Git tracking, then the `.gitignore` setting will be applied.
 4. Submit and push, therefore the files or folders will be excluded.
-    ```
-    git rm -r --cached .
-    git add .
-    git commit -m 'update .gitignore'
-    ```
+```
+git rm -r --cached .
+git add .
+git commit -m 'update .gitignore'
+```
+
 
 
 
