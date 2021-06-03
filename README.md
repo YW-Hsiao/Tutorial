@@ -186,7 +186,22 @@ git remote -v
     ```
 
 
-### 1-5. 
+
+### 1-5. gitignore
+[![gitignore](https://img.shields.io/badge/github-gitignore-blue)](https://github.com/github/gitignore)
+1. If we want to ignore some file or folder, we just need to add `.gitignore` file into our repository.
+2. Before add `.gitignore`, there are existences of file or folder, we cannot ignore them. In other hand, `.gitignore` only ignore untracked files, so we need to clear the local Git cache, which is equivalent to remove all files, but no files are deleted.
+3. And then re-join Git tracking, then the `.gitignore` setting will be applied.
+4. Submit and push, therefore the files or folders will be excluded.
+    ```
+    git rm -r --cached .
+    git add .
+    git commit -m 'update .gitignore'
+    ```
+
+
+
+### 1-6. 
 1. If there is a existence of repository, and you want to add a new folder to it
     ```ruby
     mkdir "new folder"
