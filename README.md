@@ -221,6 +221,89 @@ git commit -m 'update .gitignore'
     error: src refspec main does not match any.
     error: failed to push some refs to 'https://github.com/YW-Hsiao/Test.git'
     ```
+    
+    
+
+
+### 1-7. submodule
+1. In terminal, go to your sub-repository, and execute `git submodule add` to add `sub-repo`: 
+    ```ruby
+    cd <where>/sub-repo
+    git submodule add <repo url> <folder>
+    e.g.
+    git submodule add https://github.com/YW-Hsiao/Test_v6.git Test_v6
+    ```
+    The feedback is
+    ```
+    Cloning into '/youwei_home/GitHub_Test/Test_v6/Test_v6'...
+    ```
+    and enter your `Username` and `Password`:
+    ```
+    Username for 'https://github.com': <ID>
+    Password for 'https://YW-Hsiao@github.com': <password>
+    ```
+    The feedback is
+    ```
+    remote: Enumerating objects: 4, done.
+    remote: Counting objects: 100% (4/4), done.
+    remote: Compressing objects: 100% (2/2), done.
+    remote: Total 4 (delta 0), reused 4 (delta 0), pack-reused 0
+    Unpacking objects: 100% (4/4), 262 bytes | 262.00 KiB/s, done.
+    ```
+2. Use `git status` to look over status:
+    ```
+    On branch main
+    Your branch is up to date with 'origin/main'.
+    
+    Changes to be committed:
+      (use "git restore --staged <file>..." to unstage)
+        new file:   .gitmodules
+        new file:   Test_v6
+    ```
+3. And then use `git commit` and `git push` to complish
+    ```
+    git commit -m "add submodule"
+    ```
+    The feedback is
+    ```
+    [main 2e53b06] add submodule
+     2 files changed, 4 insertions(+)
+     create mode 100644 .gitmodules
+     create mode 160000 Test_v6
+    ```
+    Use `git status`
+    ```
+    On branch main
+    Your branch is ahead of 'origin/main' by 1 commit.
+      (use "git push" to publish your local commits)
+      
+    nothing to commit, working tree clean
+    ```
+    ```
+    git push -u origin main
+    ```
+    The feedbask is
+    ```
+    Username for 'https://github.com': <ID>
+    Password for 'https://YW-Hsiao@github.com': <password>
+    ```
+    ```
+    Enumerating objects: 4, done.
+    Counting objects: 100% (4/4), done.
+    Delta compression using up to 80 threads
+    Compressing objects: 100% (3/3), done.
+    Writing objects: 100% (3/3), 426 bytes | 426.00 KiB/s, done.
+    Total 3 (delta 0), reused 0 (delta 0)
+    To https://github.com/YW-Hsiao/Test_v6.git
+       c1fc533..2e53b06  main -> main
+    Branch 'main' set up to track remote branch 'main' from 'origin'.
+    ```
+
+
+    
+    
+    
+
 
 
 
