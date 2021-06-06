@@ -299,6 +299,26 @@ git commit -m 'update .gitignore'
        0aa9d3a..f8a5744  main -> main
     Branch 'main' set up to track remote branch 'main' from 'origin'.
     ```
+    
+    
+    
+### 1-8. 
+1. After update the `git-sub-module`, how to update `git-main-module`?
+    ```ruby
+    cd <where>/git-sub-module
+    echo "update sub module content" >> sub.txt
+    git add .
+    git commit -m "update content"
+    git push -u origin main
+    ```
+    We will see the repo. of `git-sub-module` to be updated, but you can find the `git-sub-module` folder of the repo. of `git-main-module` connect the old repo. of `git-sub-module`. So that we need to synchronize the repo. of `git-sub-module` in the repo. of `git-main-module`.
+    ```ruby
+    cd <where>/git-main-module
+    git submodule update --remote --merge
+    ```
+
+
+
 
 
     
