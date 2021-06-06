@@ -230,10 +230,10 @@ git commit -m 'update .gitignore'
 [![submodule](https://img.shields.io/badge/GitHub-submodule-blue)](https://blog.puckwang.com/post/2020/git-submodule-vs-subtree/#%E6%96%B0%E5%A2%9E-submodule)
 1. In terminal, we go to the `SuperRepo`, and execute `git submodule add` to add `SubRepo`:
     ```ruby
-    cd <where>/SubRepo
+    cd <where>/SuperRepo
     git submodule add <sub-repo url> <folder>
     e.g.
-    git submodule add https://github.com/YW-Hsiao/Test_v6.git Test_v7
+    git submodule add https://github.com/YW-Hsiao/Test_v7.git Test_v7
     ```
     The feedback is
     ```
@@ -246,11 +246,10 @@ git commit -m 'update .gitignore'
     ```
     The feedback is
     ```
-    remote: Enumerating objects: 7, done.
-    remote: Counting objects: 100% (7/7), done.
-    remote: Compressing objects: 100% (5/5), done.
-    remote: Total 7 (delta 0), reused 7 (delta 0), pack-reused 0
-    Unpacking objects: 100% (7/7), 656 bytes | 328.00 KiB/s, done.
+    remote: Enumerating objects: 3, done.
+    remote: Counting objects: 100% (3/3), done.
+    remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0
+    Unpacking objects: 100% (3/3), 208 bytes | 208.00 KiB/s, done.
     ```
 2. Use `git status` to look over status:
     ```
@@ -259,20 +258,21 @@ git commit -m 'update .gitignore'
     
     Changes to be committed:
       (use "git restore --staged <file>..." to unstage)
-            modified:   .gitmodules
+            new file:   .gitmodules
             new file:   Test_v7
     ```
-    And then use `git commit` and `git push` to complish
+3. And then use `git commit` and `git push` to complish the submodule:
     ```ruby
     git commit -m "add submodule"
     ```
     The feedback is
     ```
-    [main eddeff9] add submodule
+    [main f8a5744] add submodule
      2 files changed, 4 insertions(+)
+     create mode 100644 .gitmodules
      create mode 160000 Test_v7
     ```
-    Use `git status`
+    Use `git status`:
     ```
     On branch main
     Your branch is ahead of 'origin/main' by 1 commit.
@@ -283,22 +283,26 @@ git commit -m 'update .gitignore'
     ```ruby
     git push -u origin main
     ```
-    Enter
+    Enter:
     ```
     Username for 'https://github.com': <ID>
     Password for 'https://YW-Hsiao@github.com': <Password>
     ```
     ```
-    Enumerating objects: 5, done.
-    Counting objects: 100% (5/5), done.
+    Enumerating objects: 4, done.
+    Counting objects: 100% (4/4), done.
     Delta compression using up to 80 threads
     Compressing objects: 100% (3/3), done.
-    Writing objects: 100% (3/3), 460 bytes | 460.00 KiB/s, done.
+    Writing objects: 100% (3/3), 426 bytes | 426.00 KiB/s, done.
     Total 3 (delta 0), reused 0 (delta 0)
     To https://github.com/YW-Hsiao/Test_v6.git
-       2e53b06..eddeff9  main -> main
+       0aa9d3a..f8a5744  main -> main
     Branch 'main' set up to track remote branch 'main' from 'origin'.
     ```
+
+
+    
+
     
     
     
