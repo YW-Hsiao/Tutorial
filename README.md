@@ -225,30 +225,32 @@ git commit -m 'update .gitignore'
     
 
 
+
 ### 1-7. submodule
-1. In terminal, go to your sub-repository, and execute `git submodule add` to add `sub-repo`: 
+[![submodule](https://img.shields.io/badge/GitHub-submodule-blue)](https://blog.puckwang.com/post/2020/git-submodule-vs-subtree/#%E6%96%B0%E5%A2%9E-submodule)
+1. In terminal, we go to the `SuperRepo`, and execute `git submodule add` to add `SubRepo`:
     ```ruby
-    cd <where>/sub-repo
-    git submodule add <repo url> <folder>
+    cd <where>/SubRepo
+    git submodule add <sub-repo url> <folder>
     e.g.
-    git submodule add https://github.com/YW-Hsiao/Test_v6.git Test_v6
+    git submodule add https://github.com/YW-Hsiao/Test_v6.git Test_v7
     ```
     The feedback is
     ```
-    Cloning into '/youwei_home/GitHub_Test/Test_v6/Test_v6'...
+    Cloning into '/youwei_home/GitHub_Test/Test_v6/Test_v7'...
     ```
     and enter your `Username` and `Password`:
     ```
     Username for 'https://github.com': <ID>
-    Password for 'https://YW-Hsiao@github.com': <password>
+    Password for 'https://YW-Hsiao@github.com': <Password>
     ```
     The feedback is
     ```
-    remote: Enumerating objects: 4, done.
-    remote: Counting objects: 100% (4/4), done.
-    remote: Compressing objects: 100% (2/2), done.
-    remote: Total 4 (delta 0), reused 4 (delta 0), pack-reused 0
-    Unpacking objects: 100% (4/4), 262 bytes | 262.00 KiB/s, done.
+    remote: Enumerating objects: 7, done.
+    remote: Counting objects: 100% (7/7), done.
+    remote: Compressing objects: 100% (5/5), done.
+    remote: Total 7 (delta 0), reused 7 (delta 0), pack-reused 0
+    Unpacking objects: 100% (7/7), 656 bytes | 328.00 KiB/s, done.
     ```
 2. Use `git status` to look over status:
     ```
@@ -257,19 +259,18 @@ git commit -m 'update .gitignore'
     
     Changes to be committed:
       (use "git restore --staged <file>..." to unstage)
-        new file:   .gitmodules
-        new file:   Test_v6
+            modified:   .gitmodules
+            new file:   Test_v7
     ```
-3. And then use `git commit` and `git push` to complish
-    ```
+    And then use `git commit` and `git push` to complish
+    ```ruby
     git commit -m "add submodule"
     ```
     The feedback is
     ```
-    [main 2e53b06] add submodule
+    [main eddeff9] add submodule
      2 files changed, 4 insertions(+)
-     create mode 100644 .gitmodules
-     create mode 160000 Test_v6
+     create mode 160000 Test_v7
     ```
     Use `git status`
     ```
@@ -279,38 +280,31 @@ git commit -m 'update .gitignore'
       
     nothing to commit, working tree clean
     ```
-    ```
+    ```ruby
     git push -u origin main
     ```
-    The feedbask is
+    Enter
     ```
     Username for 'https://github.com': <ID>
-    Password for 'https://YW-Hsiao@github.com': <password>
+    Password for 'https://YW-Hsiao@github.com': <Password>
     ```
     ```
-    Enumerating objects: 4, done.
-    Counting objects: 100% (4/4), done.
+    Enumerating objects: 5, done.
+    Counting objects: 100% (5/5), done.
     Delta compression using up to 80 threads
     Compressing objects: 100% (3/3), done.
-    Writing objects: 100% (3/3), 426 bytes | 426.00 KiB/s, done.
+    Writing objects: 100% (3/3), 460 bytes | 460.00 KiB/s, done.
     Total 3 (delta 0), reused 0 (delta 0)
     To https://github.com/YW-Hsiao/Test_v6.git
-       c1fc533..2e53b06  main -> main
+       2e53b06..eddeff9  main -> main
     Branch 'main' set up to track remote branch 'main' from 'origin'.
     ```
-
-
     
     
     
-
-
-
-
     
-
-
-
+    
+    
 ## 2. Linux (macOS) Commands
 `"folder"=the name of folder; "file"=the name of file`
 1. Path  
