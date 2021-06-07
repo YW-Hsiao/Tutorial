@@ -314,7 +314,11 @@ git commit -m 'update .gitignore'
     We will see the repo. of `git-sub-module` to be updated, but you can find the `git-sub-module` folder of the repo. of `git-main-module` connect the old repo. of `git-sub-module`. So that we need to synchronize the repo. of `git-sub-module` in the repo. of `git-main-module`.
     ```ruby
     cd <where>/git-main-module
-    git submodule update --remote --merge
+    git submodule update --remote --merge (failure)
+    git submodule foreach --recursive git pull origin main (successful)
+    git add .
+    git commit -m "update submodule"
+    git push -u origin main
     ```
 
 
