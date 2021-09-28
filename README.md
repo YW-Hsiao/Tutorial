@@ -449,7 +449,10 @@ git commit -m 'update .gitignore'
     ssh -N -f -L localhost:6699:localhost:6699 youwei@140.114.94.174
     ```
     
-
+3. CPU workstation VPN jupyterlab
+    ```
+    jupyter lab --ip 192.168.88.247 --allow-root
+    ```
 
 
 
