@@ -424,10 +424,12 @@ git commit -m 'update .gitignore'
     `>`: Redirection, redirect input output
     `|`:  
     `echo`:  
-    `cat`
-    `df -h`: Look over the size of systematic storage
-    `du -hs <where>/"folder"`: Show the size of folder
-    `du -chd 1 | sort -h`: List all size of folders in current path and sort them
+    `cat`. 
+    `df -h`: Look over the size of systematic storage.  
+    `du -hs <where>/"folder"`: Show the size of folder.  
+    `du -chd 1 | sort -h`: List all size of folders in current path and sort them.  
+    `htop`: Look over CPU.  
+    `free -h`: Look over RAM.
     
 
 
@@ -438,9 +440,9 @@ git commit -m 'update .gitignore'
     `docker ps`: Look over the operating container.  
     > `docker ps -a`: More detail
     
-    `docker images`: Look over the images.
-    `htop`: Look over CPU.
-    `free -h`: Look over RAM.
+    `docker images`: Look over the images.  
+    `docker stats` and `ctrl+c`: Look over the containers.
+    
 2. JupyterLab  
     In your container
     ```
