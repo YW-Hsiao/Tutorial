@@ -400,6 +400,9 @@ git commit -m 'update .gitignore'
     ```
     rsync -avzh <where>/"file" <pi>@192.168.1.12:<where>/mybackup/
     ```
+    ```
+    rsync -avh --include '*.cmnd' --exclude '.*/' --exclude 'Analysis/' --exclude 's/' --include '*/' --exclude '*' ./ ../../backup_2/
+    ```
 3. Word editor  
 `vim`: Creat a txt file.
     ```
