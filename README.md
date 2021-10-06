@@ -403,6 +403,11 @@ git commit -m 'update .gitignore'
     ```
     rsync -avh --include '*.cmnd' --exclude '.*/' --exclude 'Analysis/' --exclude 's/' --include '*/' --exclude '*' ./ ../../backup_2/
     ```
+    ```
+    rsync -avh --include '*.hepmc' --exclude '.*/' --exclude 'Analysis/' --exclude 's/' --include '*/' --exclude '*' ./ ../PYTHIA_Experts/
+    rsync -avh --include '*.root' --exclude '.*/' --exclude 'Analysis/' --exclude 's/' --include '*/' --exclude '*' ./ ../PYTHIA_Experts/
+    rsync -avh --include '*.log' --exclude '.*/' --exclude 'Analysis/' --exclude 's/' --include '*/' --exclude '*' ./ ../PYTHIA_Experts/
+    ```
 3. Word editor  
 `vim`: Creat a txt file.
     ```
