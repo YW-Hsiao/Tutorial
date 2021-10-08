@@ -369,6 +369,7 @@ git commit -m 'update .gitignore'
     > `rm -r "folder"`: Remove folder and all files inside.  
     > `rm -f`:  
     > `rm -rf`:  
+    > `rm -ri`
     
     `cp`: Copy/Paste
     ```
