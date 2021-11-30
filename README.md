@@ -429,6 +429,9 @@ git commit -m 'update .gitignore'
     gzip -kv -9 test_1.txt > compressing.out 2>&1
     gzip -d test_1.txt.gz
     ```
+    ```
+    nohup gzip -kv -9 ckkwl-4.hepmc > compressing.out 2>&1 &
+    ```
 6. Others  
     `clear`: Clear terminal layouts.  
     `grep`: Catch and highlight key words.  
