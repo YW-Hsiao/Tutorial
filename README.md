@@ -409,6 +409,10 @@ git commit -m 'update .gitignore'
     rsync -avh --include '*.root' --exclude '.*/' --exclude 'Analysis/' --exclude 's/' --include '*/' --exclude '*' ./ ../PYTHIA_Experts/
     rsync -avh --include '*.log' --exclude '.*/' --exclude 'Analysis/' --exclude 's/' --include '*/' --exclude '*' ./ ../PYTHIA_Experts/
     ```
+    Remote PYTHIA_Experts_tms
+    ```
+    rsync -avh --include '*.cmnd' --exclude '.*/' --exclude 'Analysis/' --exclude 's/' --exclude 'analysis/' --include '*/' --exclude '*' ./ ../CERNBox/PYTHIA_Experts_tms/
+    ```
 3. Word editor  
 `vim`: Creat a txt file.
     ```
