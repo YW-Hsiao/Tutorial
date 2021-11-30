@@ -425,6 +425,10 @@ git commit -m 'update .gitignore'
     > `q!`: Not save and exit
 4. Compression  
 `gzip`: Compress file.
+    ```
+    gzip -kv -9 test_1.txt > compressing.out 2>&1
+    gzip -d test_1.txt.gz
+    ```
 6. Others  
     `clear`: Clear terminal layouts.  
     `grep`: Catch and highlight key words.  
