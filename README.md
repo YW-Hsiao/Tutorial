@@ -415,6 +415,9 @@ git commit -m 'update .gitignore'
     ```
     ```
     rsync -avh --include '*.hepmc.gz' --exclude '.*/' --exclude 'Analysis/' --exclude 's/' --exclude 'analysis/' --include '*/' --exclude '*' ./ ../CERNBox/PYTHIA_Experts_tms/
+    rsync -avh --include '*.root' --exclude '.*/' --exclude 'Analysis/' --exclude 's/' --exclude 'analysis/' --include '*/' --exclude '*' ./ ../CERNBox/PYTHIA_Experts_tms/
+    rsync -avh --include '*.log' --exclude '.*/' --exclude 'Analysis/' --exclude 's/' --exclude 'analysis/' --include '*/' --exclude '*' ./ ../CERNBox/PYTHIA_Experts_tms/
+    rsync -avh --include '*.tar.gz' --exclude '.*/' --exclude 'Analysis/' --exclude 's/' --exclude 'analysis/' --include '*/' --exclude '*' ./ ../CERNBox/PYTHIA_Experts_tms/
     ```
 3. Word editor  
 `vim`: Creat a txt file.
