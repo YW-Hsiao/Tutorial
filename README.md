@@ -412,6 +412,8 @@ git commit -m 'update .gitignore'
     Remote PYTHIA_Experts_tms
     ```
     rsync -avh --include '*.cmnd' --exclude '.*/' --exclude 'Analysis/' --exclude 's/' --exclude 'analysis/' --include '*/' --exclude '*' ./ ../CERNBox/PYTHIA_Experts_tms/
+    ```
+    ```
     rsync -avh --include '*.hepmc.gz' --exclude '.*/' --exclude 'Analysis/' --exclude 's/' --exclude 'analysis/' --include '*/' --exclude '*' ./ ../CERNBox/PYTHIA_Experts_tms/
     ```
 3. Word editor  
