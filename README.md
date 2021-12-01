@@ -431,6 +431,8 @@ git commit -m 'update .gitignore'
     ```
     ```
     nohup gzip -kv -9 ckkwl-4.hepmc > compressing.out 2>&1 &
+    nohup gzip -kv -6 ckkwl-4.hepmc > compressing-4.out 2>&1 &
+    nohup gzip -kv -6 ckkwl-8.hepmc > compressing-8.out 2>&1 &
     ```
 6. Others  
     `clear`: Clear terminal layouts.  
