@@ -12,6 +12,7 @@ __pycache__/
 *.npz
 *.csv
 *.hepmc.gz
+*.lhe
 
 # folders
-
+Tutorial_hepmc/sm
