@@ -12,8 +12,13 @@ __pycache__/
 *.npz
 *.csv
 *.hepmc.gz
+<<<<<<< HEAD
 *.lhe
 
 # folders
 Tutorial_hepmc/sm/*
 
+=======
+
+# folders
+>>>>>>> 04722186decb144b4bb41550aa9292720fd14591
