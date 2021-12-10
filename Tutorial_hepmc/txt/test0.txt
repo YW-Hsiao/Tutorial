@@ -1,0 +1,31 @@
+import model sm 
+define p = g u c d s u~ c~ d~ s~ 
+define j = g u c d s u~ c~ d~ s~ 
+define l+ = e+ mu+ 
+define l- = e- mu- 
+define vl = ve vm vt 
+define vl~ = ve~ vm~ vt~ 
+generate p p > l+ l- QED=2 QCD=0 @1 
+add process p p > l+ l- j QED=2 QCD=2 @2 
+add process p p > l+ l- j j QED=2 QCD=4 @3 
+output /youwei_home/Tutorial_hepmc/sm
+launch /youwei_home/Tutorial_hepmc/sm
+
+shower=OFF 
+detector=OFF 
+analysis=OFF 
+
+set run_card nevents 10000
+set run_card ebeam1 3500.0
+set run_card ebeam2 3500.0
+set run_card pdlabel lhapdf 
+
+set ickkw 0 
+set xqcut 3
+set maxjetflavor 4 
+set alpsfact 1 
+
+set iseed 21 
+set drjj 0.01 
+set ktdurham -1 
+set dparameter 0.4 

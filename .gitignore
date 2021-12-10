@@ -1,0 +1,19 @@
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py
+
+# files
+*.log
+*.hepmc
+*.root
+*.npz
+*.csv
+*.hepmc.gz
+*.lhe
+
+# folders
+Tutorial_hepmc/sm/*
+
