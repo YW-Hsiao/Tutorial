@@ -1,0 +1,2 @@
+# AnalysisName               PADType    Switch     DelphesCard
+atlas_conf_2019_040            v1.2        on    delphes_card_atlas_exot_2015_03.tcl                     #  ATLAS - 13 TeV - Multijet + met (139 fb-1)

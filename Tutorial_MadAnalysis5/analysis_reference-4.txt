@@ -1,0 +1,2 @@
+# AnalysisName               PADType    Switch     DelphesCard
+cms_sus_16_033            v1.2        on    delphes_card_cms_sus_16_033.tcl                     #  CMS   - 13 TeV - SUSY multijets (35.9 fb-1)

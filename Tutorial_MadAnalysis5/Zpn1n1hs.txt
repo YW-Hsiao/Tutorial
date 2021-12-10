@@ -1,0 +1,35 @@
+import model DarkHiggs2MDM
+generate p p > zp > n1 n1 hs QED<=2, (hs > b b~) @0
+output /youwei_home/Tutorial_MadAnalysis5/monosbb
+launch /youwei_home/Tutorial_MadAnalysis5/monosbb
+
+# set shower, madspin decay or analysis
+shower=Pythia8
+detector=Delphes
+analysis=OFF
+done
+
+###################################
+# set param and run card settings #
+###################################
+# Z' boson mass (in GeV)
+set MZP 2000
+# dark matter particle mass (in GeV)
+set MDM 200
+# dark Higgs boson mass (in GeV)
+set MHs 90
+# coupling of Z' boson to quarks
+set gq 0.25
+# coupling of dark Higgs and Z' boson to dark matter
+set gx 1.0
+# mixing angle of dark Higgs and SM Higgs bosons
+# default value: 0.01, recommend not to change
+set th 0.01
+# decay widths of dark Higgs boson and Z' boson
+# AUTO (default): automatic computation of minimal width
+set whs AUTO
+set wzp AUTO
+# PDF set (default: 263000=NNPDF30_lo_as_0130)
+set pdlabel lhapdf
+set lhaid 263000
+done

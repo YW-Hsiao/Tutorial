@@ -15,4 +15,18 @@ __pycache__/
 *.lhe
 
 # folders
+# ## Tutorial_hepmc
 Tutorial_hepmc/sm
+
+# ## Tutorial_MadAnalysis5
+Tutorial_MadAnalysis5/DarkHiggs_example_mJ
+Tutorial_MadAnalysis5/DarkHiggs_example_mbb
+Tutorial_MadAnalysis5/DarkHiggs_example_recast
+Tutorial_MadAnalysis5/DarkHiggs_example_recast-1
+Tutorial_MadAnalysis5/DarkHiggs_example_recast-2
+Tutorial_MadAnalysis5/DarkHiggs_example_recast-3
+Tutorial_MadAnalysis5/DarkHiggs_example_recast-4
+Tutorial_MadAnalysis5/DarkHiggs_example_recast-5
+Tutorial_MadAnalysis5/monosbb
+
+

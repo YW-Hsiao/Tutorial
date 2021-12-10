@@ -1,0 +1,2 @@
+# AnalysisName               PADType    Switch     DelphesCard
+cms_sus_19_006            v1.2        on    delphes_card_cms_sus_19_006.tcl                     #  CMS   - 13 TeV - SUSY in the HT / missing HT channel (137 fb-1)

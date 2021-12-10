@@ -1,0 +1,2 @@
+# AnalysisName               PADType    Switch     DelphesCard
+atlas_exot_2016_25            v1.2        on    delphes_card_atlas_2016_25.tcl                     #  ATLAS - 13 TeV - Monohiggs in the bbar channel (36.1 fb-1)

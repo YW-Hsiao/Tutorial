@@ -1,0 +1,5 @@
+set main.recast = on
+set main.recast.store_root = True
+import /youwei_home/Tutorial_MadAnalysis5/monosbb/Events/run_01/tag_1_pythia8_events.hepmc.gz
+set main.recast.card_path = /youwei_home/Tutorial_MadAnalysis5/analysis_reference-5.txt
+submit /youwei_home/Tutorial_MadAnalysis5/DarkHiggs_example_recast-5
